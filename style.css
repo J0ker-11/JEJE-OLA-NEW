@@ -824,18 +824,6 @@ header .right-head a:last-child:hover{
     header .right-head {
       display: none;
     }
-  }
-  
-
-    
-
-
-
-
-
-  
-   /* ---------- Mobile (≤768px) ---------- */
-@media (max-width: 768px) {
 
     /* Home section */
     .home {
@@ -888,6 +876,7 @@ header .right-head a:last-child:hover{
         float: none;
     }
 
+    
     /* Contact section */
     .con-section {
         padding: 3rem 1rem;
@@ -970,7 +959,17 @@ header .right-head a:last-child:hover{
         gap: 2rem;
         padding: 2rem 0;
     }
-}
+
+  }
+  
+
+    
+
+
+
+
+
+ 
 
 /* ---------- Small phones (≤480px) ---------- */
 @media (max-width: 480px) {
