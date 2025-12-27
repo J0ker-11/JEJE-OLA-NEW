@@ -261,7 +261,6 @@ header .right-head a:last-child:hover{
 
 /*------   CONTACT SECTION STARTS ------*/
 
-
 .con-section{
     padding: 12rem;
     margin-top: 10rem;
@@ -353,9 +352,6 @@ header .right-head a:last-child:hover{
 }
 
 /*------   CONTACT SECTION ENDS ------*/
-
-
-
 
 
 
@@ -701,9 +697,7 @@ header .right-head a:last-child:hover{
 
 
 
-/* =========================
-   RESPONSIVE DESIGN
-   ========================= */
+/* ========================= RESPONSIVE DESIGN ========================= */
 
 /* ---------- Tablets (≤1024px) ---------- */
 @media (max-width: 1024px) {
