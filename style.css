@@ -834,97 +834,190 @@ header .right-head a:last-child:hover{
 
 
   
+   /* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+
+    /* Home section */
     .home {
-      padding: 0 1.5rem;
+        padding: 1rem;
+        margin-top: 1rem;
     }
-  
+
     .home .home-image {
-      border-radius: 0.8rem;
+        border-radius: 0.8rem;
+        height: auto;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
     }
-  
+
     .home .home-image .home-text h1 {
-      font-size: 2.6rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
     }
-  
+
     .home .home-image .home-text p {
-      margin: 0 1rem;
-      font-size: 1.3rem;
+        font-size: 1rem;
+        margin: 0 0.5rem 1.5rem;
+        line-height: 1.5rem;
     }
-  
+
+    .home .home-image .home-text a {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+
     .home .home-bottom .container {
-      flex-direction: column;
-      width: 100%;
-      transform: translate(0, -2rem);
+        display: none;
+        flex-direction: column;
+        gap: 1.5rem;
+        transform: translate(0, -1rem);
     }
-  
+
     .home .home-bottom .container .box {
-      border-right: none !important;
-      text-align: center;
+        border-right: none !important;
+        text-align: center;
     }
-  
+
     .home .home-bottom .container .box a {
-      float: none;
+        float: none;
     }
-  
+
+    /* Contact section */
     .con-section {
-      padding: 4rem 1.5rem;
-      margin-top: 6rem;
+        padding: 3rem 1rem;
+        margin-top: 4rem;
     }
-  
+
     .con-section .contact-us {
-      flex-direction: column;
+        flex-direction: column;
+        gap: 2rem;
     }
-  
+
     .con-section .contact-us .text h2 {
-      font-size: 2.8rem;
+        font-size: 2rem;
     }
-  
+
+    .con-section .contact-us .text p {
+        font-size: 1rem;
+    }
+
+    /* Convenience section */
+    .convenience {
+        padding: 2rem 1rem;
+    }
+
     .convenience .provided {
-      gap: 3rem;
-      padding-top: 4rem;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 2rem;
     }
-  
+
     .convenience .content {
-      padding: 2rem 0;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem 0;
     }
-  
+
+    .convenience .content .box h2 {
+        font-size: 1.8rem;
+    }
+
+    .convenience .content .box p {
+        font-size: 1rem;
+    }
+
     .convenience .video {
-      height: 40vh;
+        height: 25vh;
     }
-  
+
     .convenience .video video {
-      height: 100%;
-      margin-top: 0;
+        height: 100%;
+        margin-top: 0;
     }
-  
-    .property .de-box {
-      grid-template-columns: 1fr;
+
+    /* Property section */
+    .property {
+        padding: 3rem 1rem;
     }
-  
-    .footer .footer-box {
-      grid-template-columns: 1fr;
-      gap: 3rem;
-    }
-  }
-  
-  /* ---------- Small phones (≤480px) ---------- */
-  @media (max-width: 480px) {
-    html {
-      font-size: 70%;
-    }
-  
-    .home .home-image .home-text h1 {
-      font-size: 2.2rem;
-    }
-  
+
     .property .prop-h h2 {
-      font-size: 2.8rem;
+        font-size: 2rem;
     }
-  
+
+    .property .prop-h p {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .property .de-box {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer .footer-box {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+}
+
+/* ---------- Small phones (≤480px) ---------- */
+@media (max-width: 480px) {
+    html {
+        font-size: 65%;
+    }
+
+    .home .home-image .home-text h1 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .home .home-image .home-text p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    .home .home-image .home-text a {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
     .con-section .contact-us .text h2 {
-      font-size: 2.5rem;
+        font-size: 1.6rem;
     }
-  }
+
+    .con-section .contact-us .text p {
+        font-size: 0.9rem;
+    }
+
+    .convenience .content .box h2 {
+        font-size: 1.6rem;
+    }
+
+    .convenience .content .box p {
+        font-size: 0.9rem;
+    }
+
+    .property .prop-h h2 {
+        font-size: 1.6rem;
+    }
+
+    .property .prop-h p {
+        font-size: 0.9rem;
+    }
+}
+
   
 /*------   FOOTER SECTION ENDS ------*/
 
