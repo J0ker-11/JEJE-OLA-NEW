@@ -105,6 +105,44 @@ header .right-head a:last-child:hover{
 }
 
 
+
+/* Hamburger button for mobile */
+.menu-toggle {
+    display: none;
+    font-size: 2.6rem;
+    cursor: pointer;
+    user-select: none;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  /* Hamburger lines style */
+  .menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--black);
+    margin: 6px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  
+  /* Show hamburger on mobile */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+
+
+
+
+
+
+
+
 /*------   HOME SECTION STARTS ------*/
 .home{
     width: 100%;
@@ -663,32 +701,231 @@ header .right-head a:last-child:hover{
 
 
 
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* ---------- Tablets (≤1024px) ---------- */
+@media (max-width: 1024px) {
+    header {
+      padding: 0 2rem;
+    }
+  
+    .home {
+      height: auto;
+    }
+  
+    .home .home-image .home-text h1 {
+      font-size: 3.5rem;
+    }
+  
+    .home .home-image .home-text p {
+      margin: 0 3rem;
+    }
+  
+    .con-section {
+      padding: 6rem 3rem;
+    }
+  
+    .con-section .contact-us .box {
+      padding-left: 0;
+      height: auto;
+    }
+  
+    .convenience {
+      height: auto;
+      padding: 0 3rem;
+    }
+  
+    .property {
+      padding: 6rem 3rem;
+    }
+  
+    .property .de-box {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .footer {
+      padding: 3rem;
+    }
+  
+    .footer .footer-box {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      padding: 3rem 0;
+    }
+  }
+  
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      padding: 0 1.5rem;
+    }
+  
+    header .left-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    /* NAV OVERLAY */
+    header .left-head nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+  
+    header .left-head nav.active {
+      transform: translateX(0);
+    }
+  
+    /* CLOSE BUTTON */
+    header .left-head nav .close {
+      display: block;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      cursor: pointer;
+    }
+  
+    header .left-head nav .close img {
+      width: 28px;
+    }
+  
+    /* MENU */
+    header .left-head .menu-bar {
+      margin-top: 7rem;
+    }
+  
+    header .left-head .menu-bar ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+    }
+  
+    header .left-head nav a {
+      font-size: 1.6rem;
+    }
+  
+    /* HIDE AUTH BUTTONS */
+    header .right-head {
+      display: none;
+    }
+  }
+  
+
+    
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+    .home {
+      padding: 0 1.5rem;
+    }
+  
+    .home .home-image {
+      border-radius: 0.8rem;
+    }
+  
+    .home .home-image .home-text h1 {
+      font-size: 2.6rem;
+    }
+  
+    .home .home-image .home-text p {
+      margin: 0 1rem;
+      font-size: 1.3rem;
+    }
+  
+    .home .home-bottom .container {
+      flex-direction: column;
+      width: 100%;
+      transform: translate(0, -2rem);
+    }
+  
+    .home .home-bottom .container .box {
+      border-right: none !important;
+      text-align: center;
+    }
+  
+    .home .home-bottom .container .box a {
+      float: none;
+    }
+  
+    .con-section {
+      padding: 4rem 1.5rem;
+      margin-top: 6rem;
+    }
+  
+    .con-section .contact-us {
+      flex-direction: column;
+    }
+  
+    .con-section .contact-us .text h2 {
+      font-size: 2.8rem;
+    }
+  
+    .convenience .provided {
+      gap: 3rem;
+      padding-top: 4rem;
+    }
+  
+    .convenience .content {
+      padding: 2rem 0;
+    }
+  
+    .convenience .video {
+      height: 40vh;
+    }
+  
+    .convenience .video video {
+      height: 100%;
+      margin-top: 0;
+    }
+  
+    .property .de-box {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer .footer-box {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+  
+  /* ---------- Small phones (≤480px) ---------- */
+  @media (max-width: 480px) {
+    html {
+      font-size: 70%;
+    }
+  
+    .home .home-image .home-text h1 {
+      font-size: 2.2rem;
+    }
+  
+    .property .prop-h h2 {
+      font-size: 2.8rem;
+    }
+  
+    .con-section .contact-us .text h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
 /*------   FOOTER SECTION ENDS ------*/
 
 
